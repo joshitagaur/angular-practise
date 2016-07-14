@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click a button</title>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myController">
+		<button ng-click="count=count+1; toggleShow()">Click</button>
+		<p ng-show ="show">Count is {{count}}</p>
+	</div>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app-4.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body ng-app="myApp">
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app-2.js"></script>
+	<div ng-controller = "myController">
+	<p ng-hide="isSpy">{{fname}}</p>
+	<p ng-hide="isSpy">{{lname}}</p>
+	<p ng-show="isSpy">{{fullname()}}</p>
+	</div>
+</body>
+</html>

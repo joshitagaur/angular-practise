@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body ng-app="myApp">
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app-3.js"></script>
+	<div ng-controller = "myController">
+		<div ng-repeat = "employee in employees">
+			{{employee.fname | uppercase}}
+			{{employee.lname | lowercase}}
+			{{employee.salary | currency }}
+		</div>
+	</div>
+	
+</body>
+</html>
